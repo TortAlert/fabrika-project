@@ -1,12 +1,17 @@
 # fabrika-project
 Проект бионического протеза руки, изготавливаемого на 3D принтере.
 
+![f4628cbf-dfa9-4a33-b8b8-3e07ea2fa36e](https://github.com/TortAlert/fabrika-project/assets/60708873/365b5484-5046-45a8-8a98-1266f54f3d8c)
+![c23b15fd-8851-486e-9534-be891021dc72](https://github.com/TortAlert/fabrika-project/assets/60708873/56c11458-3672-4bd5-8e98-a5b1ae149f43)
+
+
 Необходимые элементы:
 - x2 батарейка типа Крона,
 - Arduino Leonardo/Amperka Iskra Neo,
 - x2 button,
 - x7 servo 180,
 - EMG sensor "Muscle Sensor v3"
+
 
 
 Код контроллера:
