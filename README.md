@@ -19,6 +19,10 @@
 ![Безымянный](https://github.com/TortAlert/fabrika-project/assets/60708873/dd609c29-ca07-4c04-97d9-880454c6f481)
 
 
+https://github.com/TortAlert/fabrika-project/assets/60708873/4d91cc81-f305-4956-8483-04f2271fc968
+
+
+
 
 Код контроллера:
 ``` c++
