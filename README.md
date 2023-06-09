@@ -12,6 +12,9 @@
 - x7 servo 180,
 - EMG sensor "Muscle Sensor v3"
 
+Подключение EMG датчика:
+![Безымянный](https://github.com/TortAlert/fabrika-project/assets/60708873/dd609c29-ca07-4c04-97d9-880454c6f481)
+
 
 
 Код контроллера:
