@@ -1,5 +1,6 @@
 # fabrika-project
 Проект бионического протеза руки, изготавливаемого на 3D принтере.
+Конструкция основана на OpenSource проектке InMoov: https://inmoov.fr/hand-and-forarm/
 
 ![f4628cbf-dfa9-4a33-b8b8-3e07ea2fa36e](https://github.com/TortAlert/fabrika-project/assets/60708873/365b5484-5046-45a8-8a98-1266f54f3d8c)
 ![c23b15fd-8851-486e-9534-be891021dc72](https://github.com/TortAlert/fabrika-project/assets/60708873/56c11458-3672-4bd5-8e98-a5b1ae149f43)
