@@ -2,12 +2,13 @@
 
 
 const int EMGpin = A0;
-const int bPin_grip = 8;
+const int bPin_grip = 10;
 const int bPin_fuck = 9;
-const int bPin_rotate = 10;
+const int bPin_rotate = 8;
 
 int EMGstate = 0;
-bool flag = 0;
+int flag1 = 0;
+bool flag2 = 0;
 int bState_grip = 0;
 int bState_fuck = 0;
 int bState_rotate = 0;
@@ -42,14 +43,23 @@ void setup() {
 void loop() {
   EMGstate = analogRead(EMGpin);
 
-  if (EMGstate > 100)
-    flag = ~flag;
+  if (EMGstate > 150) 
+    if (flag1 < 10)
+      ++flag1;
+    else {
+      flag1 = 0;
+      if (flag2)
+        flag2 = 0;
+      else
+        flag2 = 1;
+    }
+  
 
   bState_grip = digitalRead(bPin_grip);
   bState_fuck = digitalRead(bPin_fuck);
   bState_rotate = digitalRead(bPin_rotate);
 
-  if (flag) {
+  if (flag2) {
     rotServo1.write(180);
     rotServo2.write(180);
     rotServo3.write(180);
@@ -80,10 +90,12 @@ void loop() {
   }
 
   if (bState_rotate)
-    rotServoRwrite(180);
+    rotServoR.write(180);
   else
-    rotServoRwrite(0);
+    rotServoR.write(0);
 
   Serial.println(EMGstate);
-  delay(200);
+  Serial.println(flag1);
+  Serial.println(flag2);
+  delay(100);
 }
